@@ -1,30 +1,18 @@
-# Smart Mart Art Project Management Tool
+# Smart Mart Art – Project Management (MERN)
 
-A collaborative project management app (Trello/Asana-like) built with MERN stack.
+Backend: Node/Express, MongoDB, Socket.IO  
+Frontend: React (CRA), Redux Toolkit, react-beautiful-dnd  
+Auth: JWT (access + refresh) • Realtime: project rooms, task/comment events
 
-## Features
-- Projects, boards, tasks, comments, notifications
-- Real-time collaboration (Socket.io)
-- JWT authentication
-- Role-based permissions
-- Kanban board UI (drag-and-drop)
-- Activity log
+Dev
+- Backend: cd backend && npm start (requires .env)
+- Frontend: cd frontend && npm start
+- Tests: backend -> npm test, frontend -> npx cypress open
 
-## Getting Started
+Env
+- backend/.env (see backend/.env.example)
+- frontend/.env (see frontend/.env.example)
 
-### Backend
-1. `cd backend`
-2. `npm install`
-3. `npm run dev`
-
-### Frontend
-1. `cd frontend`
-2. `npm install`
-3. `npm start`
-
-## Testing
-- Backend: `npm test` (Jest)
-- Frontend: `npm test` (Cypress)
-
-## Deployment
-- See deployment scripts and environment setup in each folder.
+Deploy
+- Backend: Render/Heroku/GKE (Socket.IO + MongoDB Atlas)
+- Frontend: Vercel/Netlify (set REACT_APP_API_URL)
